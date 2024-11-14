@@ -5,32 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakery</title>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <header>
       <nav>
-        <a href="#"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
+        <a href="/"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
         <ul>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a class="link" href="#traditions-section">Our traditions</a></li>
+          <li><a class="link" href="#chefs-section">Chefs</a></li>
+          <li><a class="link" href="#formats-section">Formats</a></li>
+          <li><a class="link" href="#contact-section">Contacts</a></li>
         </ul>
       </nav>
-      <button type="button">Order a call</button>
+      <button class="button" type="button">Order a call</button>
     </header>
     <main>
       <section>
-        <h1>Modern Bakery</h1>
+        <h1 class="hero-title"> <span class="accent">Modern</span> Bakery</h1>
       </section>
 
-      <section>
-        <ul>
+      <section id="traditions-section">
+        <ul class="advantages-list">
           <li>Great demand on the market</li>
           <li>Budget-friendly formats</li>
           <li>Experienced management team</li>
         </ul>
-        <h2>A new format of traditions</h2>
+        <h2 class="section-title">A new format of traditions</h2>
         <p>
           <span>shop bakery</span> is a bakery that took all the best and
           preserved the taste of traditional baking and the naturalness of the
@@ -44,8 +45,8 @@
         <img src="./images/bakery landing.jpg" alt="Bakery Landing " />
       </section>
 
-      <section>
-        <h2>Our best chefs</h2>
+      <section id="chefs-section">
+        <h2 class="section-title">Our best <span class="accent">chefs</span></h2>
         <ul>
           <li>
             <article>
@@ -73,8 +74,8 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Formats</h2>
+      <section id="formats-section">
+        <h2 class="section-title">Formats</h2>
         <ul>
           <li>
             <article>
@@ -94,18 +95,27 @@
         </ul>
       </section>
 
-      <section>
-        <h2>Join the network of bakeries</h2>
+      <section id="contact-section">
+        <h2 class="section-title">Join the network of bakeries</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2659.404035962958!2d16.3712436!3d48.1988331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d078282166ac7%3A0xceaba5bcdc66f532!2sSt.%20Charles&#39;s%20Church!5e0!3m2!1sen!2sat!4v1731355858407!5m2!1sen!2sat"
+          width="603"
+          height="595"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
+
     <footer>
       <nav>
-        <a href="#"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
+        <a href="/"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
         <ul>
-          <li><a href="#">Our traditions</a></li>
-          <li><a href="#">Chefs</a></li>
-          <li><a href="#">Formats</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#traditions-section">Our traditions</a></li>
+          <li><a href="#chefs-section">Chefs</a></li>
+          <li><a href="#formats-section">Formats</a></li>
+          <li><a href="#contact-section">Contacts</a></li>
         </ul>
       </nav>
       <address>
@@ -129,8 +139,9 @@
           </li>
         </ul>
         <a href="#" target="_blank">Privacy Policy</a>
-        <p>© 2024 Data is protected</p>
+        <p>&copy; 2024 Data is protected</p>
       </address>
     </footer>
+
   </body>
 </html>
