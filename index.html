@@ -7,21 +7,27 @@
     <title>Modern Bakery</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
+  
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href="/"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Our traditions</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Chefs</a></li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#contact-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <button class="button" type="button">Order a call</button>
+        <div class="header-container">
+          <nav class="header-nav">
+            <a href="/"
+              ><img src="./images/logo.svg" alt="Logo Shop Bakery"
+            /></a>
+            <ul class="header-links">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Chefs</a></li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contact-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <button class="button" type="button">Order a call</button>
+        </div>
       </div>
     </header>
     <main>
@@ -31,7 +37,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="advantages-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantages</h2>
           <ul class="advantages-list">
@@ -44,31 +50,37 @@
 
       <section class="traditions-section section" id="traditions-section">
         <div class="container">
-          <h2 class="traditions-title section-title">
-            A new format of traditions
-          </h2>
-          <p class="traditions-text">
-            <span class="brand uppercase">shop bakery</span> is a bakery that
-            took all the best and preserved the taste of traditional baking and
-            the naturalness of the ingredients.
-          </p>
-          <p class="traditions-text">
-            We work like the most famous chains —
-            <span class="brand">5 minutes and the order is ready</span>. And our
-            bakeries have a stylish design and high quality service!
-          </p>
-          <img src="./images/bakery landing.jpg" alt="Bakery Landing " />
+          <div class="traditions-container">
+            <div class="traditions-content">
+              <h2 class="traditions-title section-title">
+                A new format of traditions
+              </h2>
+              <p class="traditions-text">
+                <span class="brand uppercase">shop bakery</span> is a bakery
+                that took all the best and preserved the taste of traditional
+                baking and the naturalness of the ingredients.
+              </p>
+              <p class="traditions-text">
+                We work like the most famous chains —
+                <span class="brand">5 minutes and the order is ready</span>.
+                <br />
+                And our bakeries have a stylish design and high quality service!
+              </p>
+            </div>
+            <img src="./images/bakery landing.jpg" alt="Bakery Landing " />
+          </div>
         </div>
       </section>
 
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title">
+          <h2 class="chefs-title section-title centred">
             Our best <span class="accent">chefs</span>
           </h2>
           <ul>
             <li>
               <article>
+                <img class="chef-photo" src="./images/Mary.jpg" alt="Mary Photo">
                 <h3 class="chef-title">Mary</h3>
                 <p>Hello, I'm Mary!</p>
                 <p>
@@ -80,6 +92,7 @@
             </li>
             <li>
               <article>
+                <img class="chef-photo" src="./images/Lukas.jpg" alt="Lukas Photo">
                 <h3 class="chef-title">Lukas</h3>
                 <p>Hello, I'm Lukas!</p>
                 <p>
@@ -96,13 +109,13 @@
 
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Formats</h2>
-          <ul>
-            <li>
-              <article>
+          <h2 class="formats-title section-title centred">Formats</h2>
+          <ul class="formats-list">
+            <li class="format-list-item">
+              <article class="format-card">
                 <h3 class="format-title">Walrus</h3>
                 <div class="format-text">
-                  <p>Area: up to 120 m<sub>2</sub></p>
+                  <p>Area: up to 120 m&sup2;</p>
                   <p>Menu: advanced menu</p>
                   <p>
                     Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general
@@ -112,22 +125,22 @@
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="format-list-item">
+              <article class="format-card">
                 <h3 class="format-title">Horseshoe</h3>
                 <div class="format-text">
-                  <p>Area: up to 25 m<sub>2</sub></p>
+                  <p>Area: up to 25 m&sup2;</p>
                   <p>Menu: the most popular menu items</p>
                   <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
                   <p>Seats: none</p>
                 </div>
               </article>
             </li>
-            <li>
-              <article>
+            <li class="format-list-item">
+              <article class="format-card">
                 <h3 class="format-title">Handlebar</h3>
                 <div class="format-text">
-                  <p>Area: up to 15 m<sub>2</sub></p>
+                  <p>Area: up to 15 m&sup2;</p>
                   <p>Menu: the most popular menu items</p>
                   <p>Staff: 1 cashier, 1 baker, 1 baker's assistant</p>
                   <p>Seats: none</p>
@@ -156,7 +169,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
         <nav>
           <a href="/"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
