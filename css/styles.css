@@ -367,10 +367,6 @@ address{
     gap: 32px;
 }
 
-.contact-form{
-
-}
-
 .contact-text {
     color: var(--brand-light);
 }
