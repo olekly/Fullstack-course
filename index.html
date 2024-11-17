@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
-  
   <body>
     <header>
       <div class="container">
@@ -77,30 +76,47 @@
           <h2 class="chefs-title section-title centred">
             Our best <span class="accent">chefs</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <img class="chef-photo" src="./images/Mary.jpg" alt="Mary Photo">
-                <h3 class="chef-title">Mary</h3>
-                <p>Hello, I'm Mary!</p>
-                <p>
-                  For 10 years, I have been bringing interesting and delicious
-                  ideas to life.
-                </p>
-                <p>I will bake the most delicious products for you!</p>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/Mary.jpg"
+                  alt="Mary Photo"
+                />
+                <div>
+                  <h3 class="chef-title">Mary</h3>
+                  <div class="chef-text">
+                    <p>Hello, I'm Mary!</p>
+                    <p>
+                      For 10 years, I have been bringing interesting and
+                      delicious ideas to life.
+                    </p>
+                    <p>I will bake the most delicious products for you!</p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
-                <img class="chef-photo" src="./images/Lukas.jpg" alt="Lukas Photo">
-                <h3 class="chef-title">Lukas</h3>
-                <p>Hello, I'm Lukas!</p>
-                <p>
-                  I have 18 years of experience as a confectioner.
-                  <span class="chef-uppercase">shop bakery</span> is our love,
-                  which we share with you every time through our pastries!
-                </p>
-                <p>I will make a unique filling for you for any taste!</p>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/Lukas.jpg"
+                  alt="Lukas Photo"
+                />
+                <div>
+                  <h3 class="chef-title">Lukas</h3>
+                  <div class="chef-text">
+                    <p>Hello, I'm Lukas!</p>
+                    <p>
+                      I have 18 years of experience as a confectioner.
+                      <span class="chef-uppercase">shop bakery</span> is our
+                      love, which we share with you every time through our
+                      pastries!
+                    </p>
+                    <p>I will make a unique filling for you for any taste!</p>
+                  </div>
+                </div>
               </article>
             </li>
           </ul>
@@ -110,110 +126,148 @@
       <section class="section" id="formats-section">
         <div class="container">
           <h2 class="formats-title section-title centred">Formats</h2>
-          <ul class="formats-list">
-            <li class="format-list-item">
-              <article class="format-card">
-                <h3 class="format-title">Walrus</h3>
-                <div class="format-text">
-                  <p>Area: up to 120 m&sup2;</p>
-                  <p>Menu: advanced menu</p>
-                  <p>
-                    Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 general
-                    waiters
-                  </p>
-                  <p>Seats: available</p>
-                </div>
-              </article>
-            </li>
-            <li class="format-list-item">
-              <article class="format-card">
-                <h3 class="format-title">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Area: up to 25 m&sup2;</p>
-                  <p>Menu: the most popular menu items</p>
-                  <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
-                  <p>Seats: none</p>
-                </div>
-              </article>
-            </li>
-            <li class="format-list-item">
-              <article class="format-card">
-                <h3 class="format-title">Handlebar</h3>
-                <div class="format-text">
-                  <p>Area: up to 15 m&sup2;</p>
-                  <p>Menu: the most popular menu items</p>
-                  <p>Staff: 1 cashier, 1 baker, 1 baker's assistant</p>
-                  <p>Seats: none</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <div class="formats-container">
+            <button class="slider-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-Arrow-1"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="format-list-item">
+                <article class="format-card">
+                  <h3 class="format-title">Walrus</h3>
+                  <div class="format-text">
+                    <p>Area: up to 120 m&sup2;</p>
+                    <p>Menu: advanced menu</p>
+                    <p>
+                      Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2
+                      general waiters
+                    </p>
+                    <p>Seats: available</p>
+                  </div>
+                </article>
+              </li>
+              <li class="format-list-item">
+                <article class="format-card">
+                  <h3 class="format-title">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Area: up to 25 m&sup2;</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+              <li class="format-list-item">
+                <article class="format-card">
+                  <h3 class="format-title">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Area: up to 15 m&sup2;</p>
+                    <p>Menu: the most popular menu items</p>
+                    <p>Staff: 1 cashier, 1 baker, 1 baker's assistant</p>
+                    <p>Seats: none</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="slider-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-Arrow-1"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="section" id="contact-section">
+      <section class="contact-section section" id="contact-section">
         <div class="container">
-          <h2 class="contact-title section-title">
-            Join the network of bakeries
-          </h2>
-          <p class="contact-text">Fill out the form so we can contact you!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2659.404035962958!2d16.3712436!3d48.1988331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d078282166ac7%3A0xceaba5bcdc66f532!2sSt.%20Charles&#39;s%20Church!5e0!3m2!1sen!2sat!4v1731355858407!5m2!1sen!2sat"
-            width="603"
-            height="595"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contact-title section-title">
+                Join the network of bakeries
+              </h2>
+              <p class="contact-text">
+                Fill out the form so we can contact you!
+              </p>
+              <!--Form-->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2659.404035962958!2d16.3712436!3d48.1988331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d078282166ac7%3A0xceaba5bcdc66f532!2sSt.%20Charles&#39;s%20Church!5e0!3m2!1sen!2sat!4v1731355858407!5m2!1sen!2sat"
+              width="603"
+              height="595"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="/"><img src="./images/logo.svg" alt="Logo Shop Bakery" /></a>
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Our traditions</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Chefs</a></li>
-            <li><a class="link" href="#formats-section">Formats</a></li>
-            <li><a class="link" href="#contact-section">Contacts</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="adress-link" href="tel:+436601234567"
-                >+ 43 660 1234567</a
-              >
-            </li>
-            <li>
-              <a class="adress-link" href="mailto:shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="adress-link"
-                href="https://maps.app.goo.gl/3eK7UyiM8DyBJ5Ta8"
-                target="_blank"
-                >1040 Wien, Karlsplatz 10</a
-              >
-            </li>
-            <li>
-              <a href="#"></a
-              ><!--facebook icon-->
-            </li>
-            <li>
-              <a href="#"></a
-              ><!--inst icon-->
-            </li>
-          </ul>
-          <a class="adress-link" href="#" target="_blank">Privacy Policy</a>
-          <p class="adress-copyright">&copy; 2024 Data is protected</p>
-        </address>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-nav-logo">
+              <a href="/">
+                <img src="./images/logo.svg" alt="Logo Shop Bakery" />
+              </a>
+            </div>
+            <ul class="footer-nav-links">
+              <li>
+                <a class="link" href="#traditions-section">Our traditions</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Chefs</a></li>
+              <li><a class="link" href="#formats-section">Formats</a></li>
+              <li><a class="link" href="#contact-section">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="footer-adress">
+            <ul class="adress-contacts">
+              <li>
+                <a class="adress-link" href="tel:+436601234567"
+                  >+ 43 660 1234567</a
+                >
+              </li>
+              <li>
+                <a class="adress-link" href="mailto:shopbakery@gmail.com"
+                  >shopbakery@gmail.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="adress-link"
+                  href="https://maps.app.goo.gl/3eK7UyiM8DyBJ5Ta8"
+                  target="_blank"
+                  >1040 Wien, Karlsplatz 10</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="adress-social" width="32" height="32">
+                    <use
+                      href="./images/icons.svg#icon-facebook_logo_icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="adress-social" width="32" height="32">
+                    <use
+                      href="./images/icons.svg#icon-instagram_logo_icon"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="copyright-container">
+              <a class="adress-link" href="#" target="_blank">Privacy Policy</a>
+              <p class="adress-copyright">&copy; 2024 Data is protected</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
