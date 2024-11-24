@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modern Bakery</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-
+  <!--Додати правильні відступи в футері, розставити правильно символи в футері, прибрати в контактній формі лейбл коли там щось є, розставити текст в форматах, додати стилі на заголовок в модальному вікні -->
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
@@ -25,7 +25,9 @@
               <li><a class="link" href="#contact-section">Contacts</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Order a call</button>
+          <button class="button modal-btn-open" type="button">
+            Order a call
+          </button>
         </div>
       </div>
     </header>
@@ -135,6 +137,11 @@
             <ul class="formats-list">
               <li class="format-list-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Walrus.jpg"
+                    alt="Walrus Format"
+                  />
                   <h3 class="format-title">Walrus</h3>
                   <div class="format-text">
                     <p>Area: up to 120 m&sup2;</p>
@@ -149,6 +156,11 @@
               </li>
               <li class="format-list-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Horseshoe.jpg"
+                    alt="Horseshoe Format"
+                  />
                   <h3 class="format-title">Horseshoe</h3>
                   <div class="format-text">
                     <p>Area: up to 25 m&sup2;</p>
@@ -160,6 +172,11 @@
               </li>
               <li class="format-list-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/Handlebar.jpg"
+                    alt="Handlebar Format"
+                  />
                   <h3 class="format-title">Handlebar</h3>
                   <div class="format-text">
                     <p>Area: up to 15 m&sup2;</p>
@@ -170,7 +187,7 @@
                 </article>
               </li>
             </ul>
-            <button class="slider-button" type="button">
+            <button class="slider-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-Arrow-1"></use>
               </svg>
@@ -189,7 +206,48 @@
               <p class="contact-text">
                 Fill out the form so we can contact you!
               </p>
-              <!--Form-->
+              <form class="contact-form" name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label" for="user-name">Name</label>
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="user-tel">Phone number</label>
+                  <input
+                    class="form-input"
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    required
+                  />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="user-email">E-mail</label>
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="user-email"
+                    id="user-email"
+                    required
+                  />
+                </div>
+
+                <button class="form-button button" type="submit">
+                  Order a call
+                </button>
+                <p class="form-policy">
+                  By clicking the button I agree to the
+                  <a class="form-policy-link" href="#">Privacy Policy</a>
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -270,5 +328,57 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2>Order a call</h2>
+        <p class="contact-text">
+          Leave a request and our specialist will contact you!
+        </p>
+        <form class="modal-form" name="modal-form" autocomplete="on">
+          <div class="form-field">
+            <label class="form-label" for="user-name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-tel">Phone number</label>
+            <input
+              class="form-input"
+              type="tel"
+              name="user-tel"
+              id="user-tel"
+              required
+            />
+          </div>
+
+          <div class="form-field">
+            <label class="form-label" for="user-email">E-mail</label>
+            <input
+              class="form-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              required
+            />
+          </div>
+
+          <button class="form-button button" type="submit">Order a call</button>
+          <p class="form-policy">
+            By clicking the button I agree to the
+            <a class="form-policy-link" href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
